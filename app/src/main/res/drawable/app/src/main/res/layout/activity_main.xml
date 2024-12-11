@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="CNA RR CAMPUS"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="30sp"
+    />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_view"
+        android:rowCount="3"
+        android:columnCount="2"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            >
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|center_horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_menu_book_24"/>
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="PROGRAMS"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_vertical|center_horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_calendar_month_24"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="CALENDAR"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_vertical|center_horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_directions_bus_24"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="METROBUS"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_vertical|center_horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_schedule_24"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="SCHEDULE"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_vertical|center_horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_newspaper_24"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="NEWS"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_vertical|center_horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_contact_page_24"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="CONTACTS"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="221dp"
+            android:id="@+id/button_1id"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="@drawable/ic_launcher_foreground"
+            />
+
+        <Button
+            android:id="@+id/button_2id"
+            android:layout_width="200dp"
+            android:layout_height="221dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:background="@drawable/ic_launcher_foreground" />
+
+        <Button
+            android:id="@+id/button_3id"
+            android:layout_width="200dp"
+            android:layout_height="221dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="@drawable/ic_launcher_foreground" />
+
+        <Button
+            android:id="@+id/button_4id"
+            android:layout_width="200dp"
+            android:layout_height="221dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:background="@drawable/ic_launcher_foreground" />
+
+        <Button
+            android:id="@+id/button_5id"
+            android:layout_width="200dp"
+            android:layout_height="221dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="@drawable/ic_launcher_foreground" />
+
+        <Button
+            android:id="@+id/button_6id"
+            android:layout_width="200dp"
+            android:layout_height="221dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="@drawable/ic_launcher_foreground" />
+
+    </GridLayout>
+
+</RelativeLayout>
+

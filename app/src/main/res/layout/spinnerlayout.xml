@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/middle"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="64dp"
+        android:background="#fff">
+
+        <Spinner
+            android:id="@+id/spinner_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/spinner_y"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_p"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/middle"
+        android:text="Get Schedule"
+        android:textColor="#055b8c"
+        android:background="#ccc"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+</RelativeLayout>
